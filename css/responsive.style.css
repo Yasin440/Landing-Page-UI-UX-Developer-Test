@@ -1,0 +1,175 @@
+    /*=========================== 
+        header section start 
+    ============================*/
+    
+.main_menu #bar_btn{
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-size: 30px;
+    margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+    .main_menu #bar_btn{
+        display: block;
+    }
+    .main_menu ul{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        padding: 20px;
+        background-color: var(--primaryColor);
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        transition: .5s all;
+        z-index: 1;
+    }
+    .header_area .main_menu ul li{
+        display: block;
+        line-height: 50px;
+    }
+    .header_area .main_menu .show_navBar{
+        display: block;
+        left: 0;
+    }
+    .header_area .main_menu ul li a {
+        color: #fff;
+        font-weight: bold;
+    }
+    #nav_list .primary_btn{
+        padding: 15px 12px;
+        border: 2px solid #fff;
+        font-weight: bold;
+    }
+  }
+
+    /*=========================== 
+        header section end 
+    ============================*/
+
+@media screen and (max-width:576px){
+    #topUp {
+        right: 6%;
+        bottom: 6%;
+    }
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    /*--===============================
+         Banner section start 
+    ===============================--*/
+    .banner_area .search_area input {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .fa-search {
+        top: 45px;
+        left: 13px;
+    }
+    .banner_area .banner {
+        flex-wrap: wrap;
+    }
+    .banner_area .banner img{
+        width: 100%;
+    }
+    .banner_area .banner_content .title{
+        font-size: 32px;
+    }
+    .banner_area .banner_content .title .titleUnderline:before {
+        margin-top: 40px;
+    }
+    .banner_area .banner_content .btnGroup{
+        display: flex;
+        justify-content: space-between;
+    }
+    /*--===============================
+         Banner section End 
+    ===============================--*/
+
+    /*--===============================
+         Dedication section start 
+    ===============================--*/
+    .dedication_heading {
+        width: 100%;
+    }
+    .dedication_heading .title{
+        font-size:30px;
+    }
+    .dedication_heading .title .titleUnderline:before{
+        width: 145px;
+        margin-top: 38px;
+    }
+    .companies{
+        flex-direction: column;
+    }
+    .companies .company{
+        margin-bottom: 50px;
+    }
+    .allQuotes{
+        flex-direction: column;
+    }
+    .allQuotes .quoteCards{
+        width: 100%;
+    }
+    .allQuotes .quoteCard{
+        padding: 15px;
+        margin-bottom: 5rem;
+    }
+    .allQuotes .quoteCards .cardImg img{
+        width:100%;
+
+    }
+    /*--===============================
+         Dedication section end 
+    ===============================--*/
+
+    /*=========================== 
+        pricing section start 
+    ============================*/
+    .pricing .pricingTitle{
+        width:100%;
+        margin: 60px 0;
+    }
+    .pricing .pricingTitle .title {
+        font-size: 22px;
+    }
+    .pricing .pricingTitle .title .titleUnderline:before {
+        width: 14rem;
+        margin-top: 29px;
+    }
+    .pricingPackages{
+        flex-direction: column;
+    }
+    /*=========================== 
+        pricing section end 
+    ============================*/
+
+    /*--===============================
+         blog and services section start 
+    ===============================--*/
+    .blog_moreAbout{
+        flex-direction: column;
+    }
+    .blog, .moreAbout {
+        width:100%;
+    }
+    .line ,.clientTitle{
+        margin-top: 50px;
+        display: block;
+    }
+    .W-50{
+        width: 50%;
+    }
+    .aboutUs .d-flexForMobile{
+        display: flex;
+    }
+    .subscribe{
+        text-align: center;
+    }
+    
+    /*--===============================
+         blog and services section END 
+    ===============================--*/
+}

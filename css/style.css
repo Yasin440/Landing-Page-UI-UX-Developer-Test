@@ -1,0 +1,493 @@
+/* import font from font.css file */
+@import url('./font.css');
+
+/* root css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Noto_Sans";
+}
+:focus{
+    outline: none;
+}
+:root{
+    --primaryColor: #525DED;
+    --secondaryColor:rgb(255 165 0);
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.title{
+    font-size: 41px;
+    font-weight: bold;
+    margin: 18px 0;
+}
+.titleUnderline:before{
+    content: '';
+    position: absolute;
+    background-color: var(--secondaryColor);
+    width: 220px;
+    height: 5px;
+    margin-top: 50px;
+}
+.subTitle{
+    font-size: 23px;
+    color:var(--primaryColor);
+}
+.subTitle2{
+    margin-top: 10px;
+    font-size: 23px;
+    color: #000;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.paragraph1{
+    color: #bbbbbb;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 12px 0;
+}
+.primary_btn{
+    background-color: var(--primaryColor);
+    color: #fff;
+    border: none;
+    font-size: 19px;
+    padding:16px 13px;
+    border-radius: 5px;
+}
+.secondary_btn{
+    background-color: transparent;
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    font-size: 19px;
+    padding: 14px 13px;
+    border-radius: 5px;
+}
+/* root css end */
+
+/***** header section css start *****/
+.header_area{
+    font-family: "Lexend_Deca";
+    background-color: #fff;
+    height: 75px;
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 10;
+}
+.header_area .main_menu .logo{
+    margin: 11px 0 0 0;
+}
+.header_area .main_menu .header_btn{
+    margin: 10px 0 0 20px;
+    cursor: pointer;
+}
+.header_area .main_menu ul{
+    float: right;
+}
+.header_area .main_menu ul li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 75px;
+    text-transform: capitalize;
+}
+.header_area .main_menu ul li a{
+    font-size: 19px;
+    color: gray;
+    padding: 9px 8px;
+    border-radius: 5px;
+}
+.header_area .main_menu a.active,.header_area .main_menu a:hover{
+    color: #000;
+}
+/***** header section css end *****/
+
+/***** banner section css start *****/
+.banner_area{
+    padding: 100px 0;
+    background: url('../Images/Ellipse\ 16.png') top 86px left no-repeat, url('../Images/Ellipse\ 20.png') top 11rem left 15rem no-repeat, url('../Images/Ellipse\ 21.png') top 8rem left 38rem no-repeat, url('../Images/Ellipse\ 8.png') top 5rem left 25rem no-repeat;
+}
+.banner_area .search_area .search{
+    width: fit-content;
+    margin-left: auto;
+}
+.banner ::placeholder{
+    color: var(--primaryColor);
+    font-size: large;
+    font-weight: 500;
+}
+.banner_area .search_area input{
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
+    padding: 15px 90px 15px 45px;
+    border-radius: 5px;
+    font-size: larger;
+}
+.fa-search{
+    color: var(--primaryColor);
+    font-size: 25px;
+    position: relative;
+    top: 4px;
+    left: 45px;
+}
+.banner_area .banner{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-watch_video{
+    display: flex;
+    align-items: center;
+    color:var(--primaryColor);
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+}
+.banner-watch_video img{
+    border: 2px solid var(--primaryColor);
+    padding: 2px 4px 4px 3px;
+    margin-left: 10px;
+    border-radius: 2rem;
+}
+/***** banner section css end *****/
+
+/***** Dedication section css start *****/
+.dedication_area{
+    padding-top: 6rem;
+    background: url('../Images/Group\ 100.png') left -19rem top no-repeat, url('../Images/Ellipse\ 13.png') top left 25rem no-repeat ;
+}
+.dedication_heading{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.companies{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+    background: url('../Images/Ellipse\ 8.png') bottom 2rem left 8rem no-repeat, url('../Images/Ellipse\ 24.png') bottom 1rem left 34rem no-repeat;
+}
+.company{
+    width: 90%;
+    margin:0 20px;
+}
+.companies .company_about{
+    font-size: 18px;
+    color: #9f9f9f;
+    margin: 8px 0;
+}
+.companies .getStartBtn{
+    font-size: 20px;
+    color: var(--secondaryColor);
+    padding: 4px 6px;
+    border: none;
+    background: transparent;
+}
+                       /* quote card */
+
+.allQuotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: url('../Images/Ellipse\ 19.png') bottom 44rem left 7rem no-repeat, url('../Images/Ellipse\ 8.png') bottom 52rem left 33rem no-repeat, url('../Images/Ellipse\ 27.png') bottom 64rem left 55rem no-repeat, url('../Images/Ellipse\ 11.png') bottom 6rem left 29rem no-repeat;
+}.allQuotes .quoteCards{
+    width: 40%;
+}
+.allQuotes .quoteTitle{
+    margin-bottom: 6rem;
+}
+.allQuotes .quoteCard .cardImg{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.allQuotes .quoteCard{
+    border: 2px solid #dedede;
+    padding: 42px;
+    border-radius: 10px;
+    margin-bottom: 12rem;
+    transition: .5s all;
+}
+.allQuotes .lastQuoteCard{
+    margin-bottom: 0;
+}
+.allQuotes .quoteCard:hover{
+    box-shadow: 5px 5px 10px 0px #cfcfcf;
+}
+.allQuotes .lastCard{
+    margin-bottom: 3rem;
+}                    
+.allQuotes .cardBtn{
+    display: flex;
+    align-items: center;
+}   
+
+.allQuotes .learnMoreBtn{
+    font-size: 20px;
+    color: var(--primaryColor);
+    padding: 4px 6px 4px 0;
+    border: none;
+    background: transparent;
+
+}
+.allQuotes .quoteCard .cardContent{
+    font-size: 19px;
+    color: #bbbbbb;
+    margin: 30px 0;
+}
+/***** Dedication section css end *****/
+
+/*****  pricing section css start *****/
+.pricing{
+    padding-top:6rem;
+    background: url('../Images/Ellipse\ 7.png') bottom 54rem left 1rem no-repeat, url('../Images/Ellipse\ 14.png') bottom 60rem left 28rem no-repeat, url('../Images/Ellipse\ 11.png') bottom 58rem left 59rem no-repeat, url('../Images/Ellipse\ 8.png') bottom 4rem left 21rem no-repeat;
+}
+.pricingPackages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pricingPackages .package{
+    padding: 25px;
+    margin: 6px;
+    border-radius: 8px;
+    transition: .5s all;
+}
+.pricingPackages .package:hover{
+    background-color: var(--primaryColor);
+    box-shadow: 6px 6px 10px 0px #7b7b7b;
+}
+.pricingPackages .package:hover p,
+.pricingPackages .package:hover .fa-check-circle,
+.pricingPackages .package:hover .priceLabel .price{
+    color: #fff;
+}
+
+.fa-check-circle{
+    font-size: 1.5rem;
+}
+.pricing .pricingTitle{
+    width: 50%;
+    margin: 0 auto 60px auto;
+    font-size: 20px;
+    text-align: center;
+}
+.pricing .pricingTitle .title{
+    font-size: 32px;
+}
+.pricing .pricingTitle .title .titleUnderline:before{
+    width: 25rem;
+    margin-top: 43px;
+}
+.pricingPackages .package .packTitle{
+    font-size: 22px;
+    margin-bottom: 1.6rem;
+    font-weight: bold;
+    color: var(--primaryColor);
+}
+.pricingPackages .package .priceLabel{
+    font-size: 19px;
+    color: #bbbbbb;
+}
+.pricingPackages .package .priceLabel .price{
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--primaryColor);
+}
+.pricingPackages .package .packSubTitle{
+    font-size: 20px;
+    color: var(--primaryColor);
+    margin: 1.3rem 0;
+}
+.pricingPackages .package ul li{
+    display: flex;
+    align-items: center;
+    color: var(--primaryColor);
+    line-height: 40px;
+}
+.pricingPackages .package ul li p{
+    margin-left: 5px;
+}
+.pricingPackages .package .continueBtn{
+    color: var(--primaryColor);
+    background-color: #fff;
+    border: 2px solid var(--primaryColor);
+    font-size: 2rem;
+    padding: 15px;
+    width: 100%;
+    border-radius: 9px;
+    margin-top: 12px;
+}
+
+/*****  pricing section css end *****/
+
+/*****  blog_moreAbout section css start *****/
+.blog_moreAbout{
+    display: flex;
+    justify-content: space-between;
+    padding-top:120px;
+    background: url('../Images/Group\ 100.png') top -1rem right -17rem no-repeat, url('../Images/Ellipse\ 9.png') bottom 92rem left 5rem no-repeat, url('../Images/Ellipse\ 24.png') bottom 1rem left 41rem no-repeat, url('../Images/Ellipse\ 26.png') bottom 54rem left 27rem no-repeat, url('../Images/Ellipse\ 16.png') bottom 16rem left 26rem no-repeat, url('../Images/Ellipse\ 15.png') bottom 32rem left 37rem no-repeat;
+}
+.blog, .moreAbout{
+    width: 38%;
+}
+.blog_moreAbout .line:before{
+    content: '';
+    position: absolute;
+    background-color: var(--primaryColor);
+    width: 5px;
+    height: 4.5rem;
+    margin-top: -7px;
+}
+.blog .progress{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 15px 0 15px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s all;
+}
+.blog .progress .img{
+    border: 2px solid var(--primaryColor);
+    padding: 15px 15px 11px 15px;
+    border-radius: 8px;
+    transition: .5s all;
+}
+.blog .progress .content{
+    margin-left: 25px;
+}
+.blog .progress .progressTitle{
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+.progress .time{
+    font-size: 21px;
+    color: var(--primaryColor);
+    transition: .5s all;
+}
+.blog .progress:hover{
+    background-color: var(--primaryColor);
+    box-shadow: 6px 6px 10px 0px #7b7b7b;
+    color: #fff;
+}
+.blog .progress:hover .img{
+    background-color: #fff;
+}
+.blog .progress:hover .time{
+    color:#fff;
+}
+.blog_moreAbout .blog_moreAboutTitle{
+    padding-left: 25px;
+    font-size: 22px;
+    color: var(--primaryColor);
+}
+/* ////////////////////////// */
+
+.clients .clientTitle{
+    margin-top: 55px;
+}
+.clients .client{
+    display: flex;
+    margin-top: 65px;
+}
+.client .img{
+    padding: 6px 7px 2px 7px;
+    border: 2px solid var(--primaryColor);
+    height: fit-content;
+    border-radius: 2rem;
+}
+.client .content{
+    margin-left: 35px;
+}
+.client .comment{
+    font-size: 21px;
+    color: #2f2f2f;
+}
+.client .name{
+    color: #535353;
+    font-size: 22px;
+    margin-top: 9px;
+}
+.client .name:before{
+    content: '';
+    position: absolute;
+    background-color: var(--primaryColor);
+    height: 3px;
+    width: 4rem;
+    margin: 15px 0px 0px -99px;
+}
+/* ////////////////////////// */
+.moreAbout .aboutUsTitle{
+    color: #535353;
+    margin-top: 65px;
+    
+}
+.interEmail{
+    margin-top: 65px;
+}
+.interEmail input{
+    width: 95%;
+    height: 66px;
+    padding: 20px;
+    background-color: #00000012;
+    font-size: 19px;
+    border: none;
+}
+.interEmail img{
+    position: absolute;
+    margin-left: -55px;
+}
+.socialMedia{
+    margin-top: 65px;
+}
+.socialMedia ul{
+display: flex;
+align-items: center;
+margin: auto;
+width: fit-content;
+}
+.socialMedia ul li{
+    margin-right: 30px;
+}
+.socialMedia ul li img{
+    transition: .5s all;
+}
+.socialMedia ul li:hover img{
+    transform:scale(1.1);
+}
+/*****  blog_moreAbout section css end *****/
+/*****  footer section css start *****/
+.footer{
+    width: fit-content;
+    margin: 90px auto;    ;
+}
+.footer .content{
+    font-size: 19px;
+    color: #bbbbbb;
+}
+/*****  footer section css end *****/
+#topUp{
+	font-size: 30px;
+    color: #fff;
+    position: fixed;
+    right: 4%;
+    bottom: 11%;
+    /* display: none; */
+	cursor: pointer;
+	z-index: 1;
+}
+.fa.fa-chevron-up {
+    background: #4d4d4d;
+    padding: 6px;
+    border-radius: 3px;
+}

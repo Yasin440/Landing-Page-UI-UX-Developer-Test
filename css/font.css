@@ -1,0 +1,9 @@
+/* @font-face */
+@font-face {
+    font-family: "Lexend_Deca";
+    src: url('../font/Lexend_Deca/LexendDeca-Regular.ttf');
+}
+@font-face {
+    font-family: "Noto_Sans";
+    src: url('../font/Noto_Sans/NotoSans-Regular.ttf');
+}
